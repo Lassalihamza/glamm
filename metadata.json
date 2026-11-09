@@ -1,0 +1,6 @@
+{
+  "name": "SOUAD GLAM BEAUTY — Institut de Beauté, Valmascort",
+  "description": "Institut de Beauté Souad Glam Beauty à Valmascort. Coiffure, soin capillaire, pose d'ongles, hydrafacial, maquillage et packs mariée.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

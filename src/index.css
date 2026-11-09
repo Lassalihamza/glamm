@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #121212;
+    --color-secondary: #E8B4B8;
+    --color-surface-light: #FDFBF7;
+    --color-surface-card: #F8F2EC;
+    --color-accent: #C59B72;
+    --color-text-dark: #1C1917;
+    --color-text-muted: #786C68;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html[lang="ar"] {
+    font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3,
+  html[lang="ar"] .font-heading {
+    font-family: 'Amiri', serif;
+    letter-spacing: 0;
+  }
+
+  .font-body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  html[lang="ar"] .font-body {
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  /* Bi-directional isolation for prices, phone numbers, brand acronyms */
+  .isolated-ltr {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    display: inline-block;
+  }
+}
+
+/* Hide scrollbar for clean mobile snap carousels */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
